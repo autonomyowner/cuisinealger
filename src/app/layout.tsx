@@ -96,12 +96,12 @@ export default function RootLayout({
             <p className="text-sm">
               Made by{' '}
               <a
-                href="https://www.sitedz.store"
+                href="https://www.sitedz.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-kitchen-warm-light hover:text-kitchen-warm-light-soft transition-colors underline"
               >
-                www.sitedz.store
+                www.sitedz.com
               </a>
             </p>
           </div>
