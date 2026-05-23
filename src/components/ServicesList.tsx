@@ -166,12 +166,16 @@ export const ServicesList = (): JSX.Element => {
             </div>
 
             <div>
-              <button
-                type="button"
-                className="rounded-full border border-kitchen-lux-dark-green-400 px-8 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-kitchen-lux-dark-green-700 transition-colors duration-200 hover:border-kitchen-lux-dark-green-600 hover:text-kitchen-lux-dark-green-800 hover:bg-kitchen-lux-dark-green-50"
+              <a
+                href={`https://wa.me/213776797904?text=${encodeURIComponent(
+                  `Bonjour! Je souhaite demander un devis pour ${service.title}.`,
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-full border border-kitchen-lux-dark-green-400 px-8 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-kitchen-lux-dark-green-700 transition-colors duration-200 hover:border-kitchen-lux-dark-green-600 hover:text-kitchen-lux-dark-green-800 hover:bg-kitchen-lux-dark-green-50"
               >
                 Demander un devis
-              </button>
+              </a>
             </div>
             </div>
           </section>
