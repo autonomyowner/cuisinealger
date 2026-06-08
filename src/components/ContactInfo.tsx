@@ -15,10 +15,6 @@ export const ContactInfo = (): JSX.Element => {
     window.open('tel:+213776797904', '_self')
   }
 
-  const handleEmailClick = (): void => {
-    window.open('mailto:contact@cuisine-alger.com', '_self')
-  }
-
   return (
     <div className="space-y-8">
       <div className="rounded-3xl border border-kitchen-lux-dark-green-200 bg-white/90 px-6 py-10 shadow-sm">
@@ -53,43 +49,23 @@ export const ContactInfo = (): JSX.Element => {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-        <div className="rounded-3xl border border-kitchen-lux-dark-green-200 bg-white/85 px-6 py-8 shadow-sm">
-          <h3 className="text-sm uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600">
-            Telephone
-          </h3>
-          <p className="mt-2 text-lg font-semibold text-kitchen-lux-dark-green-800">
-            +213 77 679 79 04
-          </p>
+      <div className="rounded-3xl border border-kitchen-lux-dark-green-200 bg-white/85 px-6 py-8 shadow-sm">
+        <h3 className="text-sm uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600">
+          Telephone
+        </h3>
+        <p className="mt-2 text-lg font-semibold text-kitchen-lux-dark-green-800">
+          +213 77 679 79 04
+        </p>
         <p className="mt-2 text-sm text-kitchen-lux-dark-green-700">
           Pour un devis rapide ou un suivi de fabrication.
         </p>
-          <button
-            onClick={handlePhoneClick}
-            className="mt-4 text-xs font-semibold uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600 hover:text-kitchen-lux-dark-green-800 underline underline-offset-4 transition-colors duration-200"
-            type="button"
-          >
-            Appeler
-          </button>
-        </div>
-        <div className="rounded-3xl border border-kitchen-lux-dark-green-200 bg-white/85 px-6 py-8 shadow-sm">
-          <h3 className="text-sm uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600">
-            Email
-          </h3>
-          <p className="mt-2 text-lg font-semibold text-kitchen-lux-dark-green-800">
-            contact@cuisine-alger.com
-          </p>
-        <p className="mt-2 text-sm text-kitchen-lux-dark-green-700">
-          Pour partager vos plans et documents techniques.
-        </p>
-          <button
-            onClick={handleEmailClick}
-            className="mt-4 text-xs font-semibold uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600 hover:text-kitchen-lux-dark-green-800 underline underline-offset-4 transition-colors duration-200"
-            type="button"
-          >
-            Ecrire un message
-          </button>
-        </div>
+        <button
+          onClick={handlePhoneClick}
+          className="mt-4 text-xs font-semibold uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600 hover:text-kitchen-lux-dark-green-800 underline underline-offset-4 transition-colors duration-200"
+          type="button"
+        >
+          Appeler
+        </button>
       </div>
 
       <div className="rounded-3xl border border-kitchen-lux-dark-green-200 bg-white/80 px-6 py-8 text-sm uppercase tracking-[0.3em] text-kitchen-lux-dark-green-600 shadow-sm">
